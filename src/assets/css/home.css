@@ -1,0 +1,29 @@
+.header{
+    font-size: 30px;
+    line-height: 80px;
+    height: 80px;
+    background-color: #f1f1f1;
+    position: center,fixed;
+}
+.aside{
+    background-color: wheat;
+    height: 600px;
+}
+.subHeader{
+    background-color: cornflowerblue;
+}
+.desc{
+    font-size: 25px;
+    line-height: 80px;
+    color:white;
+    width:800px;
+}
+.content{
+    height: 410px;
+}
+.footer{
+    background-color: dimgray;
+    color:white;
+    font-size: 17px;
+    line-height: 30px;
+}
