@@ -13,6 +13,7 @@ export default defineConfig({
       'components':'@/components',
       'router':'@/router',
       'assets':'@/assets',
+      'views':'@/views',
     }
   }
 })

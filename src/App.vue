@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
-import hometest from '@/views/homtest.vue'
+import HomeView from "@/views/HomeView.vue";
+import MachineInfo from "@/views/machineInfo.vue";
 
 </script>
 
@@ -12,9 +12,8 @@ import hometest from '@/views/homtest.vue'
 <!--        <RouterLink to="/about">About</RouterLink>-->
 <!--        <RouterLink to="/hometest">hometest</RouterLink>-->
 <!--      </nav>-->
-
-
   <RouterView />
+<!--  <machine-info></machine-info>-->
 
 
 </template>
