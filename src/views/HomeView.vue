@@ -1,17 +1,19 @@
 <script setup lang="ts">
-// // import TheWelcome from '../components/TheWelcome.vue'
-// import machineInfo from '@/views/machineInfo.vue'
+import TheWelcome from '../components/TheWelcome.vue'
+import machineInfo from '@/views/machineInfo.vue'
 </script>
 
 <template>
+
   <div class="body">
+
   <el-container>
     <el-header height="80px" style="padding: 0" >
 <div class="header" >高速公路智能检测系统</div>
 </el-header>
 <el-container>
 <el-aside width="200px">
-  <el-menu them='dark' class="aside" @select="handleSelect" default-active="this.$router.path" router>
+  <el-menu them='dark' class="aside" default-active="this.$router.path" router>
     <el-sub-menu index="1">
       <template #title>
         <span>隐伏病害检测平台</span>
@@ -20,12 +22,6 @@
       <el-menu-item index="/projectdata">项目库</el-menu-item>
       <el-menu-item index="/data">项目数据</el-menu-item>
       <el-menu-item index="/completedata">已检数据</el-menu-item>
-
-
-<!--      <el-menu-item index="2">公司信息</el-menu-item>-->
-<!--      <el-menu-item index="3">项目库</el-menu-item>-->
-<!--      <el-menu-item index="4">项目数据</el-menu-item>-->
-<!--      <el-menu-item index="5">已检数据</el-menu-item>-->
     </el-sub-menu>
     <el-sub-menu index="2">
       <template #title>
@@ -52,7 +48,8 @@
   <el-header height="80px" style="padding: 0;margin:0">
     <el-container class="subHeader">
       <div class="desc">{{desc}}</div>
-      <el-button style="width: 100px;height: 30px;margin: 20px">新增记录</el-button>
+<!--      <el-button style="width: 100px;height: 30px;margin: 20px">新增记录</el-button>-->
+
     </el-container>
   </el-header>
   <el-main style="margin: 0;padding: 0">
@@ -64,13 +61,13 @@
 <!--        <el-table-column prop="sex" label="性别"></el-table-column>-->
 <!--        <el-table-column prop="date" label="录入日期"></el-table-column>-->
 <!--      </el-table>-->
+<!--      <img src="@/assets/highway.jpg" alt="公路图片" >-->
+
 
     </div>
   </el-main>
   <el-footer height="30px" class="footer">成都理工大学智能检测团队提供支持</el-footer>
-
 </el-container>
-
 </el-container>
 </el-container>
 
@@ -87,7 +84,7 @@
 .header{
   font-size: 30px;
   line-height: 80px;
-  background-color: #f1f1f1;
+  background-color: #659dde;
   text-align: center;
 }
 .aside{
@@ -107,6 +104,7 @@
 }
 .content{
   height: 510px;
+  width: auto;
 }
 .footer{
   background-color: dimgray;
@@ -114,5 +112,12 @@
   font-size: 17px;
   line-height: 30px;
   text-align: center;
+}
+#building{
+  background: url("@/assets/highway.jpg");
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-size: 100% 100%;
 }
 </style>
